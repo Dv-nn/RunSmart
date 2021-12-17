@@ -1,0 +1,75 @@
+@import 'base/variables';
+@import 'libs/fonts';
+@import 'libs/slick';
+@import 'libs/animate';
+
+* {
+   font-family: 'Museo Sans Cyrl', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+*::selection {
+   background: rgb(6, 97, 62);
+   color: rgb(205, 233, 203);
+}
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 6rem;
+   scroll-behavior: smooth;
+}
+.container {
+   max-width: 950px;
+   margin: 0 auto;
+   @media (max-width: $md2) {
+      max-width: 800px;
+   }
+   @media (max-width: $md3) {
+      max-width: 600px;
+   }
+   @media (max-width: $md4) {
+      max-width: 380px;
+   }
+}
+//dots slick-slider
+.dots-style {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   list-style-type: none;
+ }
+ 
+ .dots-style button {
+   background: #e7bebb77;
+   border: none;
+   border-radius: 50%;
+   font-size: 0;
+   height: 15px;
+   width: 15px;
+   margin: 5px;
+   outline: none;
+   cursor: pointer;
+ }
+ 
+ .dots-style li[class="slick-active"] button {
+   background: $main-color;
+ }
+
+ 
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/titles';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/feed';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+@import 'blocks/modal';

@@ -1,0 +1,39 @@
+.carousel {
+   padding: 81px 0;
+   @media (max-width: $md2) {
+    padding: 60px 0;
+   };
+   &__inner {
+       position: relative;
+       width: 750px;
+       margin: 0 auto;
+       @media (max-width: $md2) {
+        width: 600px;
+        img {
+            width: 590px;
+        }
+       };
+       @media (max-width: $md2) {
+        width: 550px;
+        img {
+            width: 500px;
+        }
+       };
+   }
+   .slick-prev, .slick-next  {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       left: -66px;
+       border: none;
+       background-color: #fff;
+       img {
+           width: 31px;
+           height: 50px;
+       }
+   }
+   .slick-next  {
+       right: -66px;
+       left: auto;
+   }
+}
